@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form using html and css</title>
+    <style>
+        div{
+            border: 2px solid rgb(248, 243, 243);
+            width: 300px;
+            margin-left: 200px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+        form{
+            padding-left: 20px;
+    
+        }
+        h3{
+            text-align: center;
+            color: rgb(20, 217, 151);
+        }
+        button{
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h3>Registration Form</h1>
+        <form action="">
+            
+            <label for="name">First Name:</label><br>
+            <input type="text"><br>
+            <label for="name">Last Name:</label><br>
+            <input type="text"><br>
+            <label for="email">Email:</label><br>
+            <input type="email"><br>
+            <label for="password">Password:</label><br>
+            <input type="password"><br>
+            <label for="password">Re-type Password:</label><br>
+            <input type="password"><br>
+            <label for="contact">Contact:</label><br>
+            <input type="text" name="mobile" id="mobile" maxlength="10" required><br>
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <br>
+            <button type="submit">Submit</button>
+            
+        </form>
+    </div>
+</body>
+</html>
