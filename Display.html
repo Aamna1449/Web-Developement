@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Property</title>
+    <style>
+        .box1{
+            border: 2px solid black;
+            display: inline;
+            background-color: aqua;
+        }
+        .box2{
+            border: 2px solid black;
+            display: block;
+            background-color: aquamarine;
+
+        }
+        .box3{
+            border: 2px solid black;
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            background-color: bisque;
+            
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: maroon;
+        }
+         .box4{
+            border: 2px solid black;
+            display: none;
+            background-color: burlywood;
+        }
+        .box5{
+            border: 2px solid black;
+            visibility: hidden;
+            background-color: cadetblue;
+        }
+       
+    </style>
+  </head>
+  <body>
+   <h1>Display:Inline</h1>
+    <p>Takes only space required by the element.No linebreaks before and after. Setting width/height/padding/margin not allowed.</p>
+    <div class="box1">Box1</div>
+
+    <h1>Display:Block</h1>
+    <p>Takes full space available in width and leaves a new line before and after the element.</p>
+    <div class="box2">Box2</div>
+
+    <h1>Display:Inline-block</h1>
+    <p>Similar to inline but setting width,height,padding and margin is allowed.Element can sit to next each other.</p>
+    <div class="box3">
+        Box3
+    </div>
+
+    <h1>Display:none VS visibility:hidden</h1>
+    <p>With display:none , the element is removed from the document flow. Its space is not blocked.
+        With visibility:hidden , the element is hidden but its space is reserved.
+    </p>
+    <div class="box">
+        <div class="box4">Box4</div>
+        <div class="box5">Box5</div>
+    </div>
+  </body>
+</html>
