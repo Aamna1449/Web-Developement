@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Gradient</title>
+    <style>
+      .box {
+        width: 300px;
+        height: 150px;
+        background: linear-gradient(to right, purple, blue);
+      }
+      .box2 {
+        width: 300px;
+        height: 150px;
+        background: radial-gradient(circle, pink, purple);
+        box-shadow: 5px 10px 15px gray;
+        transition: 0.35s;
+      }
+      .box2:hover {
+        transform: translateY(-5px);
+        box-shadow: 5px 15px 25px gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">I am a box</div>
+    <div class="box2">Hey I am a box2</div>
+  </body>
+</html>
